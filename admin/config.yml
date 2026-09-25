@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/full"
+public_folder: "/images/full"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "data/theme.json"
+        label: "Colors & Fonts"
+        name: "theme"
+        fields:
+          - { label: "Background (cream)", name: "color_cream", widget: "color" }
+          - { label: "Paper", name: "color_paper", widget: "color" }
+          - { label: "Cream 2", name: "color_cream_2", widget: "color" }
+          - { label: "Text (charcoal)", name: "color_charcoal", widget: "color" }
+          - { label: "Charcoal soft", name: "color_charcoal_soft", widget: "color" }
+          - { label: "Taupe", name: "color_taupe", widget: "color" }
+          - { label: "Taupe light", name: "color_taupe_light", widget: "color" }
+          - { label: "Accent", name: "color_accent", widget: "color" }
+          - { label: "Accent soft", name: "color_accent_soft", widget: "color" }
+          - { label: "Warning", name: "color_warn", widget: "color" }
+          - { label: "Display font (headings)", name: "font_display", widget: "string" }
+          - { label: "Body font", name: "font_body", widget: "string" }
+          - { label: "Mono font", name: "font_mono", widget: "string" }

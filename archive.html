@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="theme-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
 </head>
 <body data-page="archive">
 <a href="#main" class="skip-link">Skip to content</a>
@@ -52,14 +53,14 @@
 <main id="main">
 
   <div class="page-head container">
-    <div class="mono-label">THE ARCHIVE</div>
-    <h1>A decade of life online, collected in fragments.</h1>
+    <div class="mono-label" data-cms="head_label">THE ARCHIVE</div>
+    <h1 data-cms="head_heading">A decade of life online, collected in fragments.</h1>
   </div>
 
   <!-- CURATED MOMENTS — a small, hand-picked selection. Each tile opens onto the full moment. -->
   <section class="section-tight" data-theme="light">
     <div class="container reveal">
-      <p class="editorial-lede" style="margin-bottom:36px;">Not everything, just the moments worth lingering on. Tap any photo to step inside it.</p>
+      <p class="editorial-lede" style="margin-bottom:36px;" data-cms="intro_text">Not everything, just the moments worth lingering on. Tap any photo to step inside it.</p>
       <div class="curated-grid" id="archiveGrid"></div>
     </div>
   </section>
@@ -67,9 +68,9 @@
   <!-- ON INSTAGRAM -->
   <section class="section-cream2" data-theme="light">
     <div class="container reveal">
-      <div class="mono-label">ON INSTAGRAM</div>
-      <h2 class="display-md" style="margin-top:14px;">Everything else lives here.</h2>
-      <p style="margin-top:16px;color:var(--color-charcoal-softer);max-width:56ch;">The full, unfiltered archive is on Instagram &mdash; posted in real time, no curation. Come find the rest of the story.</p>
+      <div class="mono-label" data-cms="insta_label">ON INSTAGRAM</div>
+      <h2 class="display-md" style="margin-top:14px;" data-cms="insta_heading">Everything else lives here.</h2>
+      <p style="margin-top:16px;color:var(--color-charcoal-softer);max-width:56ch;" data-cms="insta_text">The full, unfiltered archive is on Instagram &mdash; posted in real time, no curation. Come find the rest of the story.</p>
 
       <div class="insta-strip" id="instaStrip">
         <!--
@@ -82,7 +83,7 @@
         <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/betteredbypeyi/" data-instgrm-version="14"></blockquote>
       </div>
 
-      <a href="https://www.instagram.com/betteredbypeyi" target="_blank" rel="noopener" class="btn-primary" style="margin-top:32px;">Follow @betteredbypeyi &rarr;</a>
+      <a href="https://www.instagram.com/betteredbypeyi" target="_blank" rel="noopener" class="btn-primary" style="margin-top:32px;"><span data-cms="insta_button_text">Follow @betteredbypeyi</span> &rarr;</a>
     </div>
   </section>
 </main>

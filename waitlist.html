@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="theme-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
 </head>
 <body data-page="waitlist">
 <a href="#main" class="skip-link">Skip to content</a>
@@ -53,20 +54,20 @@
 
   <section class="section-dark" data-theme="dark" style="min-height:86vh;display:flex;align-items:center;padding-top:130px;">
     <div class="container center-block reveal">
-      <div class="mono-label">GET FRONT ROW</div>
-      <h1 class="display-xl" style="font-size:clamp(36px,6.6vw,72px);margin-top:20px;">Be there when it arrives.</h1>
-      <p class="editorial-lede" style="margin:22px auto 0;color:var(--color-taupe-light);">Stay close. Something new is on its way.</p>
+      <div class="mono-label" data-cms="label">GET FRONT ROW</div>
+      <h1 class="display-xl" style="font-size:clamp(36px,6.6vw,72px);margin-top:20px;" data-cms="heading">Be there when it arrives.</h1>
+      <p class="editorial-lede" style="margin:22px auto 0;color:var(--color-taupe-light);" data-cms="lede">Stay close. Something new is on its way.</p>
       <form class="form-block" id="waitlistForm" novalidate style="margin:44px auto 0;text-align:left;">
         <input type="hidden" name="form_type" value="Waitlist">
         <input type="hidden" name="_subject" value="New waitlist signup">
         <div class="field"><label for="wEmail">Email address</label><input id="wEmail" name="email" type="email" required placeholder="you@example.com"><span class="field-error">Please enter a valid email.</span></div>
-        <button type="submit" class="submit-btn" style="width:100%;">I'm In &rarr;</button>
-        <p class="privacy-note">No spam. Just the updates that matter &mdash; nothing else.</p>
+        <button type="submit" class="submit-btn" style="width:100%;"><span data-cms="button_text">I'm In</span> &rarr;</button>
+        <p class="privacy-note" data-cms="privacy_note">No spam. Just the updates that matter &mdash; nothing else.</p>
         <p class="form-error" id="waitlistError">Something went wrong &mdash; please try again, or email <a href="mailto:betteredbypeyi@gmail.com">betteredbypeyi@gmail.com</a> directly.</p>
       </form>
       <div class="confirm-state" id="waitlistConfirm">
-        <div class="confirm-ring">&#10003;</div><h3>You're in.</h3>
-        <p style="color:var(--color-taupe-light);max-width:50ch;margin:0 auto;">We'll let you know the moment it opens.</p>
+        <div class="confirm-ring">&#10003;</div><h3 data-cms="confirm_heading">You're in.</h3>
+        <p style="color:var(--color-taupe-light);max-width:50ch;margin:0 auto;" data-cms="confirm_text">We'll let you know the moment it opens.</p>
       </div>
     </div>
   </section>

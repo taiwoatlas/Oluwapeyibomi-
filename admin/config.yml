@@ -26,3 +26,128 @@ collections:
           - { label: "Display font (headings)", name: "font_display", widget: "string" }
           - { label: "Body font", name: "font_body", widget: "string" }
           - { label: "Mono font", name: "font_mono", widget: "string" }
+
+  - name: "pages"
+    label: "Page Content"
+    files:
+      - file: "data/content-home.json"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - { label: "Hero label", name: "hero_label", widget: "string" }
+          - { label: "Hero heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero subtext", name: "hero_sub", widget: "string" }
+          - { label: "Hero photo", name: "hero_image", widget: "image" }
+          - { label: "Meet section label", name: "meet_label", widget: "string" }
+          - { label: "Meet section heading", name: "meet_heading", widget: "string" }
+          - { label: "Meet paragraph 1", name: "meet_para1", widget: "text" }
+          - { label: "Meet paragraph 2", name: "meet_para2", widget: "text" }
+          - { label: "Get-to-know-me label", name: "know_label", widget: "string" }
+          - { label: "Get-to-know-me text", name: "know_text", widget: "text" }
+          - { label: "Signup label", name: "signup_label", widget: "string" }
+          - { label: "Signup heading", name: "signup_heading", widget: "string" }
+          - { label: "Signup button text", name: "signup_button_text", widget: "string" }
+          - { label: "Signup privacy note", name: "signup_privacy_note", widget: "text" }
+          - { label: "Signup confirm heading", name: "signup_confirm_heading", widget: "string" }
+          - { label: "Signup confirm text", name: "signup_confirm_text", widget: "text" }
+          - { label: "Collab label", name: "collab_label", widget: "string" }
+          - { label: "Collab heading", name: "collab_heading", widget: "string" }
+          - { label: "Collab text (before email link)", name: "collab_text", widget: "text" }
+          - { label: "Collab closing statement", name: "collab_closing", widget: "text" }
+
+      - file: "data/content-about.json"
+        label: "About Page"
+        name: "about"
+        fields:
+          - { label: "Head label", name: "head_label", widget: "string" }
+          - { label: "Head heading", name: "head_heading", widget: "string" }
+          - { label: "Head lede", name: "head_lede", widget: "string" }
+          - { label: "Quote 1", name: "quote1", widget: "text" }
+          - { label: "Quote 2", name: "quote2", widget: "text" }
+          - { label: "Bio text", name: "bio_text", widget: "text" }
+          - { label: "Timeline 1 — tag", name: "timeline1_tag", widget: "string" }
+          - { label: "Timeline 1 — title", name: "timeline1_title", widget: "string" }
+          - { label: "Timeline 1 — text", name: "timeline1_text", widget: "text" }
+          - { label: "Timeline 2 — tag", name: "timeline2_tag", widget: "string" }
+          - { label: "Timeline 2 — title", name: "timeline2_title", widget: "string" }
+          - { label: "Timeline 2 — text", name: "timeline2_text", widget: "text" }
+          - { label: "Timeline 3 — tag", name: "timeline3_tag", widget: "string" }
+          - { label: "Timeline 3 — title", name: "timeline3_title", widget: "string" }
+          - { label: "Timeline 3 — text", name: "timeline3_text", widget: "text" }
+          - { label: "Timeline 4 — tag", name: "timeline4_tag", widget: "string" }
+          - { label: "Timeline 4 — title", name: "timeline4_title", widget: "string" }
+          - { label: "Timeline 4 — text", name: "timeline4_text", widget: "text" }
+          - { label: "Fragments label", name: "fragments_label", widget: "string" }
+          - { label: "Fragments heading", name: "fragments_heading", widget: "string" }
+          - { label: "Milestone label", name: "milestone_label", widget: "string" }
+          - { label: "Milestone text", name: "milestone_text", widget: "text" }
+          - { label: "Find-her label", name: "find_label", widget: "string" }
+          - { label: "Closing CTA heading", name: "cta_heading", widget: "string" }
+
+      - file: "data/content-archive.json"
+        label: "Archive Page"
+        name: "archive"
+        fields:
+          - { label: "Head label", name: "head_label", widget: "string" }
+          - { label: "Head heading", name: "head_heading", widget: "string" }
+          - { label: "Intro text", name: "intro_text", widget: "text" }
+          - { label: "Instagram label", name: "insta_label", widget: "string" }
+          - { label: "Instagram heading", name: "insta_heading", widget: "string" }
+          - { label: "Instagram text", name: "insta_text", widget: "text" }
+          - { label: "Instagram button text", name: "insta_button_text", widget: "string" }
+
+      - file: "data/content-connect.json"
+        label: "Connect Page"
+        name: "connect"
+        fields:
+          - { label: "Head label", name: "head_label", widget: "string" }
+          - { label: "Head heading", name: "head_heading", widget: "string" }
+          - { label: "Head lede", name: "head_lede", widget: "string" }
+          - { label: "Confirm heading", name: "confirm_heading", widget: "string" }
+          - { label: "Confirm text", name: "confirm_text", widget: "text" }
+
+      - file: "data/content-ask.json"
+        label: "Ask Page"
+        name: "ask"
+        fields:
+          - { label: "Head label", name: "head_label", widget: "string" }
+          - { label: "Head heading", name: "head_heading", widget: "string" }
+          - { label: "Head lede", name: "head_lede", widget: "string" }
+          - { label: "Confirm heading", name: "confirm_heading", widget: "string" }
+          - { label: "Confirm text (before email)", name: "confirm_text", widget: "text" }
+
+      - file: "data/content-services.json"
+        label: "Services Page"
+        name: "services"
+        fields:
+          - { label: "Head label", name: "head_label", widget: "string" }
+          - { label: "Head heading", name: "head_heading", widget: "string" }
+          - { label: "Head lede", name: "head_lede", widget: "text" }
+          - { label: "Service 1 — number", name: "service1_num", widget: "string" }
+          - { label: "Service 1 — title", name: "service1_title", widget: "string" }
+          - { label: "Service 1 — text", name: "service1_text", widget: "text" }
+          - { label: "Service 2 — number", name: "service2_num", widget: "string" }
+          - { label: "Service 2 — title", name: "service2_title", widget: "string" }
+          - { label: "Service 2 — text", name: "service2_text", widget: "text" }
+          - { label: "Service 3 — number", name: "service3_num", widget: "string" }
+          - { label: "Service 3 — title", name: "service3_title", widget: "string" }
+          - { label: "Service 3 — text", name: "service3_text", widget: "text" }
+          - { label: "Service 4 — number", name: "service4_num", widget: "string" }
+          - { label: "Service 4 — title", name: "service4_title", widget: "string" }
+          - { label: "Service 4 — text", name: "service4_text", widget: "text" }
+          - { label: "Service 5 — number", name: "service5_num", widget: "string" }
+          - { label: "Service 5 — title", name: "service5_title", widget: "string" }
+          - { label: "Service 5 — text", name: "service5_text", widget: "text" }
+          - { label: "CTA button text", name: "cta_button_text", widget: "string" }
+
+      - file: "data/content-waitlist.json"
+        label: "Waitlist Page"
+        name: "waitlist"
+        fields:
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Lede", name: "lede", widget: "string" }
+          - { label: "Button text", name: "button_text", widget: "string" }
+          - { label: "Privacy note", name: "privacy_note", widget: "string" }
+          - { label: "Confirm heading", name: "confirm_heading", widget: "string" }
+          - { label: "Confirm text", name: "confirm_text", widget: "text" }

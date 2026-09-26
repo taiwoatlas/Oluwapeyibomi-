@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,300..700,0..1&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="theme-loader.js" defer></script>
+<script src="content-loader.js" defer></script>
 </head>
 <body data-page="home">
 <a href="#main" class="skip-link">Skip to content</a>
@@ -53,49 +54,49 @@
 
   <!-- HERO: the image is the hero -->
   <section class="hero-photo">
-    <img class="hero-photo-img" src="images/hero/cameraroll-01.jpg" alt="Oluwapeyibomi" loading="eager" decoding="async">
+    <img class="hero-photo-img" src="images/hero/cameraroll-01.jpg" alt="Oluwapeyibomi" loading="eager" decoding="async" data-cms-img="hero_image">
     <div class="hero-photo-overlay"></div>
     <div class="hero-photo-content container reveal">
-      <div class="mono-label">A DECADE OF BECOMING</div>
-      <h1>Something is coming.</h1>
-      <p>The next chapter, from Oluwapeyibomi.</p>
+      <div class="mono-label" data-cms="hero_label">A DECADE OF BECOMING</div>
+      <h1 data-cms="hero_heading">Something is coming.</h1>
+      <p data-cms="hero_sub">The next chapter, from Oluwapeyibomi.</p>
     </div>
   </section>
 
   <!-- MEET OLUWAPEYIBOMI -->
   <section data-theme="light">
     <div class="container reveal" style="max-width:720px;">
-      <div class="mono-label">THE WOMAN BEHIND THE WORDS</div>
-      <h2 class="display-lg" style="margin-top:14px;">Meet Oluwapeyibomi.</h2>
-      <p style="margin-top:20px;color:var(--color-charcoal-softer);">For the last decade, I have been sharing my life online. What started in 2016 with putting my thoughts on a blog has now become the videos you see today on YouTube and other social media platforms.</p>
-      <p style="margin-top:16px;color:var(--color-charcoal-softer);">But lately, I have been pouring my heart into something completely different. Honestly, this has been a long time coming.</p>
+      <div class="mono-label" data-cms="meet_label">THE WOMAN BEHIND THE WORDS</div>
+      <h2 class="display-lg" style="margin-top:14px;" data-cms="meet_heading">Meet Oluwapeyibomi.</h2>
+      <p style="margin-top:20px;color:var(--color-charcoal-softer);" data-cms="meet_para1">For the last decade, I have been sharing my life online. What started in 2016 with putting my thoughts on a blog has now become the videos you see today on YouTube and other social media platforms.</p>
+      <p style="margin-top:16px;color:var(--color-charcoal-softer);" data-cms="meet_para2">But lately, I have been pouring my heart into something completely different. Honestly, this has been a long time coming.</p>
     </div>
   </section>
 
   <!-- GET TO KNOW ME -->
   <section class="section-cream2" data-theme="light">
     <div class="container reveal">
-      <div class="mono-label">GET TO KNOW ME</div>
-      <p class="quiet-statement" style="margin-top:18px;">Oluwapeyibomi is a twenty-something digital creator who is all about romanticising daily life and building a community rooted in personal growth. On my social media platforms, I share my honest, relatable lifestyle diary &mdash; from embracing my soft girl era and sharing my faith, to stepping out of my comfort zone with fun personal challenges.</p>
+      <div class="mono-label" data-cms="know_label">GET TO KNOW ME</div>
+      <p class="quiet-statement" style="margin-top:18px;" data-cms="know_text">Oluwapeyibomi is a twenty-something digital creator who is all about romanticising daily life and building a community rooted in personal growth. On my social media platforms, I share my honest, relatable lifestyle diary &mdash; from embracing my soft girl era and sharing my faith, to stepping out of my comfort zone with fun personal challenges.</p>
     </div>
   </section>
 
   <!-- SIGNUP -->
   <section data-theme="light">
     <div class="container reveal" style="max-width:720px;">
-      <div class="mono-label">BE THE FIRST TO KNOW</div>
-      <h2 class="display-md" style="margin-top:14px;">Sign me up.</h2>
+      <div class="mono-label" data-cms="signup_label">BE THE FIRST TO KNOW</div>
+      <h2 class="display-md" style="margin-top:14px;" data-cms="signup_heading">Sign me up.</h2>
       <form class="form-block" id="waitlistForm" novalidate>
         <input type="hidden" name="form_type" value="Waitlist">
         <input type="hidden" name="_subject" value="New waitlist signup">
         <div class="field"><label for="hEmail">Email address</label><input id="hEmail" name="email" type="email" required placeholder="you@example.com"><span class="field-error">Please enter a valid email.</span></div>
-        <button type="submit" class="submit-btn">Sign Me Up &rarr;</button>
-        <p class="privacy-note">By signing up today, you will be the absolute first to get exclusive sneak peeks, behind-the-scenes stories, and updates before anyone else.</p>
+        <button type="submit" class="submit-btn"><span data-cms="signup_button_text">Sign Me Up</span> &rarr;</button>
+        <p class="privacy-note" data-cms="signup_privacy_note">By signing up today, you will be the absolute first to get exclusive sneak peeks, behind-the-scenes stories, and updates before anyone else.</p>
         <p class="form-error" id="waitlistError">Something went wrong &mdash; please try again, or email <a href="mailto:betteredbypeyi@gmail.com">betteredbypeyi@gmail.com</a> directly.</p>
       </form>
       <div class="confirm-state" id="waitlistConfirm">
-        <div class="confirm-ring">&#10003;</div><h3>You're in.</h3>
-        <p style="color:var(--color-charcoal-softer);max-width:50ch;">We'll let you know the moment it opens.</p>
+        <div class="confirm-ring">&#10003;</div><h3 data-cms="signup_confirm_heading">You're in.</h3>
+        <p style="color:var(--color-charcoal-softer);max-width:50ch;" data-cms="signup_confirm_text">We'll let you know the moment it opens.</p>
       </div>
     </div>
   </section>
@@ -103,10 +104,10 @@
   <!-- COLLABORATIONS + WELCOME -->
   <section data-theme="light">
     <div class="container reveal">
-      <div class="mono-label">COLLABORATIONS &amp; PARTNERSHIPS</div>
-      <h2 class="display-md" style="margin-top:14px;">Let's work together.</h2>
-      <p style="margin-top:16px;color:var(--color-charcoal-softer);max-width:56ch;">For brand partnerships, speaking inquiries, or business collaborations, please contact me directly at: <a href="mailto:betteredbypeyi@gmail.com" class="btn-ghost">betteredbypeyi</a></p>
-      <p class="quiet-statement" style="margin-top:36px;">I am so incredibly glad you are here. Whether you have been following my journey for years or you just came across me for the very first time, welcome to my space.</p>
+      <div class="mono-label" data-cms="collab_label">COLLABORATIONS &amp; PARTNERSHIPS</div>
+      <h2 class="display-md" style="margin-top:14px;" data-cms="collab_heading">Let's work together.</h2>
+      <p style="margin-top:16px;color:var(--color-charcoal-softer);max-width:56ch;"><span data-cms="collab_text">For brand partnerships, speaking inquiries, or business collaborations, please contact me directly at:</span> <a href="mailto:betteredbypeyi@gmail.com" class="btn-ghost">betteredbypeyi</a></p>
+      <p class="quiet-statement" style="margin-top:36px;" data-cms="collab_closing">I am so incredibly glad you are here. Whether you have been following my journey for years or you just came across me for the very first time, welcome to my space.</p>
     </div>
   </section>
 
